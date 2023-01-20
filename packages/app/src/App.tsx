@@ -1,25 +1,34 @@
 import React from "react";
 import {
   Image,
+  ImageSourcePropType,
   Platform,
   SafeAreaView,
   StyleSheet,
   Text,
   View,
 } from "react-native";
-import LogoSrc from "./kbant.png";
+import { AsyncStorageExample } from "./AsyncStorageExample";
+import { subplatform } from "./config";
+import LogoSrc from "./logo.png";
 
-export function App() {
+export function App(): JSX.Element {
+  const platformValue = subplatform
+    ? `${Platform.OS} (${subplatform})`
+    : Platform.OS;
   return (
     <SafeAreaView style={styles.root}>
-      <Image style={styles.logo} source={LogoSrc} />
+      {/* On React Native for Web builds coming from CRA, TypeScript 
+          complains about the image type, so we cast it as a workaround  */}
+      <Image style={styles.logo} source={LogoSrc as ImageSourcePropType} />
       <Text style={styles.text}>Hello from React Native!</Text>
       <View style={styles.platformRow}>
         <Text style={styles.text}>Platform: </Text>
         <View style={styles.platformBackground}>
-          <Text style={styles.platformValue}>{Platform.OS}</Text>
+          <Text style={styles.platformValue}>{platformValue}</Text>
         </View>
       </View>
+      <AsyncStorageExample />
     </SafeAreaView>
   );
 }
@@ -58,5 +67,3 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 });
-
-export default App;
