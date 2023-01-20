@@ -1,0 +1,15 @@
+{
+  "name": "kbant",
+  "version": "1.0.0",
+  "description": "KBANT monorepo",
+  "repository": "https://github.com/kbant/kbant005.git",
+  "author": "Henry Will",
+  "private": true,
+  "license": "MIT",
+  "workspaces": {
+    "packages": ["packages/*"]
+  },
+    "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
+  }
+}
