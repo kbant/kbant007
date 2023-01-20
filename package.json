@@ -6,16 +6,23 @@
   "author": "Henry Will",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+    "mobile": "yarn workspace @kbant/mobile start",
+    "android": "yarn workspace @kbant/mobile android",
+    "android:studio": "yarn workspace @kbant/mobile studio",
+    "ios": "yarn workspace @kbant/mobile ios",
+    "ios:xcode": "yarn workspace @kbant/mobile xcode",
+    "ios:pods": "yarn workspace @kbant/mobile pods"
+  },
   "workspaces": {
     "packages": ["packages/*"],
     "nohoist": [
+      "**/@react-native-async-storage/async-storage",
       "**/react",
       "**/react-dom",
       "**/react-native",
       "**/react-native/**"
     ]
-  },
-    "scripts": {
-    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
   }
 }
