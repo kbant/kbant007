@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+    "app:build": "yarn workspace @kbant/app build",
     "mobile": "yarn workspace @kbant/mobile start",
     "android": "yarn workspace @kbant/mobile android",
     "android:studio": "yarn workspace @kbant/mobile studio",
@@ -15,18 +16,28 @@
     "ios:xcode": "yarn workspace @kbant/mobile xcode",
     "ios:pods": "yarn workspace @kbant/mobile pods",
     "web": "yarn workspace @kbant/web start",
-    "web:build": "yarn workspace @kbant/web build"
+    "web:build": "yarn workspace @kbant/web build",
+    "macos:metro": "yarn workspace @kbant/macos start",
+    "macos": "yarn workspace @kbant/macos macos",
+    "macos:xcode": "yarn workspace @kbant/macos xcode",
+    "electron": "yarn workspace @kbant/electron start",
+    "electron:package:mac": "yarn workspace @kbant/electron package:mac",
+    "electron:package:win": "yarn workspace @kbant/electron package:win",
+    "electron:package:linux": "yarn workspace @kbant/electron package:linux",
+    "extensions": "yarn workspace @kbant/extensions start",
+    "extensions:build": "yarn workspace @kbant/extensions build"
   },
   "workspaces": {
     "packages": [
       "packages/*"
     ],
     "nohoist": [
-      "**/@react-native-async-storage/async-storage",
+      "**/async-storage",
       "**/react",
       "**/react-dom",
       "**/react-native",
       "**/react-native/**",
+      "**/react-native-macos",
       "**/react-native-web"
     ]
   },

@@ -2,7 +2,7 @@
 
 ## Yarn
 ```
-$ yarn set version berry && yarn set version latest
+$ yarn reset && yarn set version berry && yarn set version latest && yarn install
 $ yarn --version
 ```
 

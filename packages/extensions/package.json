@@ -1,11 +1,11 @@
 {
-  "name": "@kbant/web",
+  "name": "@kbant/extensions",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test"
+    "start": "INLINE_RUNTIME_CHUNK=false craco start",
+    "build": "INLINE_RUNTIME_CHUNK=false craco build",
+    "test": "INLINE_RUNTIME_CHUNK=false craco test"
   },
   "dependencies": {
     "@kbant/app": "*",
