@@ -15,7 +15,8 @@
     "electron:package:mac": "yarn workspace @kbant/electron package:mac",
     "electron:package:win": "yarn workspace @kbant/electron package:win",
     "electron:package:linux": "yarn workspace @kbant/electron package:linux",
-    "extensions": "yarn workspace @kbant/extensions start"
+    "extensions": "yarn workspace @kbant/extensions start",
+    "storybook:mobile": "yarn workspace @kbant/mobile-storybook start"
   },
   "workspaces": {
     "packages": [
