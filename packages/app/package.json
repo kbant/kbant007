@@ -6,18 +6,10 @@
   "scripts": {
     "build": "tsc"
   },
-  "devDependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.11",
-    "@types/react": "^18.0.27",
-    "@types/react-native": "^0.71.0",
-    "typescript": "^4.9.4"
-  },
-  "peerDependencies": {
-    "@react-native-async-storage/async-storage": "*",
-    "react": "*",
-    "react-native": "*"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.20.7"
+    "@react-native-async-storage/async-storage": "^1.17.11"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.71.1"
   }
 }
