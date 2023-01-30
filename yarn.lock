@@ -2737,8 +2737,10 @@ __metadata:
     "@craco/craco": ^6.2.0
     "@kbant/app": "*"
     "@react-native-async-storage/async-storage": ^1.17.11
+    "@tsconfig/react-native": ^2.0.3
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
+    "@types/react-native": ^0.71.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-native: ^0.71.1
@@ -4861,7 +4863,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/react-native@npm:^2.0.2":
+"@tsconfig/react-native@npm:^2.0.2, @tsconfig/react-native@npm:^2.0.3":
   version: 2.0.3
   resolution: "@tsconfig/react-native@npm:2.0.3"
   checksum: 757edb4435a12d4ece9cf61c010df3dab771fbf6065c5b03445ecf440398df641d2859fc3ace3790a1f07eca990f54d16912fab59f144090871bf70612f47a80

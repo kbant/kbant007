@@ -6,8 +6,9 @@ cp mobile mobile-storybook
 npx sb init --type react_native
 ```
 
+## ios Pod install
 ```
-cd packages/mobile-storybook/ios
+cd packages/storybook/ios
 bundle install
 pod install
 ```
@@ -31,3 +32,6 @@ yarn watcher
 
 ## Reference 
 [react-native-storybook-starter](https://github.com/dannyhw/react-native-storybook-starter)
+
+## @storybook/react-native version check
+[](https://openbase.com/js/@storybook/react-native/versions)
