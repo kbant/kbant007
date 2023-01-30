@@ -16,7 +16,8 @@
     "electron:package:win": "yarn workspace @kbant/electron package:win",
     "electron:package:linux": "yarn workspace @kbant/electron package:linux",
     "extensions": "yarn workspace @kbant/extensions start",
-    "storybook:mobile": "yarn workspace @kbant/mobile-storybook start"
+    "storybook:mobile": "yarn workspace @kbant/storybook mobile",
+    "storybook:web": "yarn workspace @kbant/storybook web"
   },
   "workspaces": {
     "packages": [
@@ -25,10 +26,7 @@
     "nohoist": [
       "**/async-storage",
       "**/react",
-      "**/react-dom",
       "**/react-native",
-      "**/react-native/**",
-      "**/react-native-macos",
       "**/react-native-web"
     ]
   },

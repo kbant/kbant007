@@ -1,5 +1,5 @@
-import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export type ButtonProps = {
   onPress?: () => void;
@@ -13,17 +13,17 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 4,
-    alignSelf: "flex-start",
+    alignSelf: 'flex-start',
     flexGrow: 0,
-    backgroundColor: "purple",
+    backgroundColor: 'blue',
   },
   buttonText: {
-    color: "white",
+    color: 'white',
     fontSize: 16,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   buttonContainer: {
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
     flex: 1,
   },
 });
@@ -33,11 +33,8 @@ export const Button = ({ text, onPress, color, textColor }: ButtonProps) => (
     <TouchableOpacity
       style={[styles.button, !!color && { backgroundColor: color }]}
       onPress={onPress}
-      activeOpacity={0.8}
-    >
-      <Text style={[styles.buttonText, !!textColor && { color: textColor }]}>
-        {text}
-      </Text>
+      activeOpacity={0.8}>
+      <Text style={[styles.buttonText, !!textColor && { color: textColor }]}>{text}</Text>
     </TouchableOpacity>
   </View>
 );
