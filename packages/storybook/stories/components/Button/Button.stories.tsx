@@ -10,6 +10,6 @@ export default {
 
 export const Basic: ComponentStory<typeof Button> = args => (
   <CenterView>
-    <Button text="Hello World" color="blue" textColor="white" />
+    <Button text='Hello World' color='blue' textColor='white' />
   </CenterView>
 );

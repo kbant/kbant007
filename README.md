@@ -28,5 +28,9 @@ yarn install
 yarn mobile
 ```
 
+## react-native-paper
+
+
+
 ### References
 - [React Native monorepo](https://github.com/mmazzarolo/react-native-universal-monorepo)
